@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="legou-basic-util" />
+        <module name="legou-plat-interface" />
+        <module name="legou-plat-service" />
+        <module name="Springboot--legou-plat-parent" />
+        <module name="Springboot-basic-util" />
+        <module name="Springboot-legou-eurekaserver" />
+        <module name="Springboot-legou-zuul" />
+        <module name="Springboot-plat-parent" />
+        <module name="Springbootlegoueurekaserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="legou-basic-util" target="1.8" />
+      <module name="legou-plat-interface" target="1.8" />
+      <module name="legou-plat-service" target="1.8" />
+      <module name="Springboot--legou-plat-parent" target="1.8" />
+      <module name="Springboot-basic-parent" target="1.8" />
+      <module name="Springboot-basic-util" target="1.7" />
+      <module name="Springboot-legou-basic-parent" target="1.8" />
+      <module name="Springboot-legou-eurekaserver" target="1.8" />
+      <module name="Springboot-legou-plat-parent" target="1.8" />
+      <module name="Springboot-legou-zuul" target="1.8" />
+      <module name="Springboot-parent" target="1.8" />
+      <module name="Springboot-plat-parent" target="1.8" />
+      <module name="Springbootlegoueurekaserver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

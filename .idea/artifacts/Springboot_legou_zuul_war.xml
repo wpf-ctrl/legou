@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Springboot-legou-zuul:war">
+    <output-path>$PROJECT_DIR$/Springboot-legou-zuul/target</output-path>
+    <root id="archive" name="Springboot-legou-zuul-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Springboot-legou-zuul:war exploded" />
+    </root>
+  </artifact>
+</component>
