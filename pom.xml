@@ -13,6 +13,8 @@
     <module>Springboot-legou-zuul</module>
     <module>Springboot-legou-basic-parent</module>
     <module>Springboot-legou-plat-parent</module>
+      <module>Springboot-legou-config-server</module>
+      <module>Springboot-legou-product-parent</module>
   </modules>
 
   <name>Springboot-parent</name>
@@ -44,13 +46,18 @@
     </dependencies>
   </dependencyManagement>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <target>8</target>
+          <source>8</source>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>

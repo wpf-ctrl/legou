@@ -15,6 +15,7 @@
     <name>Springboot-legou-basic-parent</name>
     <modules>
         <module>legou-basic-util</module>
+        <module>legou-basic-generator</module>
     </modules>
 
 

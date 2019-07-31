@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itsource.legou.mapper.BrandMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.itsource.legou.domain.Brand">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="englishName" property="englishName" />
+        <result column="firstLetter" property="firstLetter" />
+        <result column="description" property="description" />
+        <result column="product_type_id" property="productTypeId" />
+        <result column="sortIndex" property="sortIndex" />
+        <result column="logo" property="logo" />
+    </resultMap>
+
+    <resultMap id="BrandMap" type="cn.itsource.legou.domain.Brand">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="englishName" property="englishName" />
+        <result column="firstLetter" property="firstLetter" />
+        <result column="description" property="description" />
+        <result column="product_type_id" property="productTypeId" />
+        <result column="sortIndex" property="sortIndex" />
+        <result column="logo" property="logo" />
+        <!--<association property="productType" javaType="cn.itsource.legou.domain.ProductType">
+            <id property="id" column="tid"/>
+            <result property="name" column="tname"/>
+        </association>-->
+        <result column="tid" property="productType.id"/>
+        <result column="tname" property="productType.name"/>
+    </resultMap>
+    <sql id="columns" >
+        b.id,
+        b.createTime,
+        b.updateTime,
+        b.NAME,
+        b.englishName,
+        b.firstLetter,
+        b.description,
+        b.product_type_id,
+        b.sortIndex,
+        b.logo
+    </sql>
+    
+    <sql id="whereSql">
+        <where>
+            <if test="query.keyword!=null and query.keyword!=''">
+                AND
+                (b.name like concat('%',#{query.keyword},'%')
+                or
+                b.englishName like concat('%',#{query.keyword},'%')
+                or
+                pt.name like concat('%',#{query.keyword},'%'))
+            </if>
+        </where>
+    </sql>
+    
+    <delete id="deletemore" parameterType="list">
+        DELETE  FROM t_brand WHERE id IN
+        <!--
+        collection：array（数组）/list(集合)
+        open:循环开始位置添加何元素
+        item:给循环的每个元素取一个别名
+        separator:循环的时候每次以指定的字符进行分割
+        close:循环结束位置添加何元素
+        -->
+        <foreach collection="list" open="(" item="i" separator="," close=")">
+            #{i}
+        </foreach>
+    </delete>
+
+    <select id="queryPage" resultMap="BrandMap">
+        SELECT
+            <include refid="columns"/>,pt.id tid,pt.name tname
+        FROM t_brand b
+        LEFT JOIN t_product_type pt on b.product_type_id=pt.id
+        <include refid="whereSql"/>
+    </select>
+
+</mapper>

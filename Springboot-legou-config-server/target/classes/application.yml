@@ -1,0 +1,25 @@
+server:
+  port: 5000
+
+eureka:
+  client:
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://localhost:6001/eureka/
+  instance:
+    prefer-ip-address: true #使用ip注册
+
+spring:
+  application:
+    name: config-server
+  profiles:
+     active: native #本地配置
+  cloud:
+    config:
+      server:
+        native:  #本地配置
+          search-locations: D:/java/idel project1/xiangmu/legou-config-server
+
+#        git:
+#          uri: https://github.com/wpf-ctrl/legou-config-server.git
+#          username: 451545641@qq.com
+#          password: wangpeishuai66

@@ -2,8 +2,8 @@ package cn.itsource.util;
 
 
 public class AjaxResult{
-    private boolean success;
-    private String message;
+    private boolean success=true;
+    private String message="操作成功";
     private Object restObj;
     private Integer errorCode;
 
@@ -38,7 +38,7 @@ public class AjaxResult{
         return restObj;
     }
 
-    public Object setRestObj(Object restObj) {
+    public AjaxResult setRestObj(Object restObj) {
         this.restObj = restObj;
         return this;
     }
