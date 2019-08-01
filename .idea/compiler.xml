@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="legou-basic-generator" />
         <module name="legou-basic-util" />
+        <module name="legou-common-interface" />
+        <module name="legou-common-service" />
         <module name="legou-plat-interface" />
         <module name="legou-plat-service" />
         <module name="legou-product-interface" />
@@ -24,6 +26,8 @@
     <bytecodeTargetLevel>
       <module name="legou-basic-generator" target="8" />
       <module name="legou-basic-util" target="8" />
+      <module name="legou-common-interface" target="8" />
+      <module name="legou-common-service" target="8" />
       <module name="legou-plat-interface" target="8" />
       <module name="legou-plat-service" target="8" />
       <module name="legou-product-interface" target="8" />
@@ -32,6 +36,7 @@
       <module name="Springboot-basic-parent" target="1.8" />
       <module name="Springboot-basic-util" target="1.7" />
       <module name="Springboot-legou-basic-parent" target="8" />
+      <module name="Springboot-legou-common-parent" target="8" />
       <module name="Springboot-legou-config-server" target="8" />
       <module name="Springboot-legou-eurekaserver" target="8" />
       <module name="Springboot-legou-plat-parent" target="8" />

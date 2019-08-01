@@ -2,7 +2,7 @@ package ${package.Controller};
 
 import ${package.Service}.${table.serviceName};
 import ${package.Entity}.${entity};
-import cn.itsource.aigou.query.${entity}Query;
+import cn.itsource.legou.query.${entity}Query;
 import cn.itsource.basic.util.AjaxResult;
 import cn.itsource.basic.util.PageList;
 import com.baomidou.mybatisplus.core.metadata.IPage;

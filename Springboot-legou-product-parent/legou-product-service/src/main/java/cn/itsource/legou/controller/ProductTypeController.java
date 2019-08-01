@@ -69,6 +69,7 @@ public class ProductTypeController {
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public List<ProductType> list(){
 
+        //
         return productTypeService.loadTypeTree();
     }
 
@@ -84,5 +85,17 @@ public class ProductTypeController {
     {
         IPage<ProductType> page = productTypeService.page(new Page<ProductType>(query.getPageNum(),query.getPageSize()));
         return new PageList<>(page.getTotal(),page.getRecords());
+    }
+
+    @GetMapping("/getHomePage")
+    public AjaxResult getHomePage(){
+
+        try {
+            productTypeService.getHomePage();
+            return AjaxResult.me().setMessage("成功").setSuccess(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setMessage("失败"+e.getMessage()).setSuccess(true);
+        }
     }
 }

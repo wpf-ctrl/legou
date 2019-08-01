@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
+  instance:
+    prefer-ip-address: true #使用ip注册到eureka服务列表
+
+
+#指向配置中心
+spring:
+  cloud:
+    config:
+      uri: http://localhost:5000  #配置中心地址
+      label: master   #主分支
+      profile: dev
+      name: common-service
+server:
+  max-http-header-size: 10240000 #配置文件的名字

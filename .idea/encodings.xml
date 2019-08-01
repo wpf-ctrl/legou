@@ -5,6 +5,9 @@
     <file url="file://$PROJECT_DIR$/Springboot-legou-basic-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Springboot-legou-common-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Springboot-legou-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Springboot-legou-eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Springboot-legou-plat-parent" charset="UTF-8" />

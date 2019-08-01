@@ -17,7 +17,7 @@ spring:
     config:
       server:
         native:  #本地配置
-          search-locations: D:/java/idel project1/xiangmu/legou-config-server
+          search-locations: D:/java/idel project1/xiangmu/git/legou-config-server
 
 #        git:
 #          uri: https://github.com/wpf-ctrl/legou-config-server.git

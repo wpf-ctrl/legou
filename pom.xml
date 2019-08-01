@@ -15,6 +15,7 @@
     <module>Springboot-legou-plat-parent</module>
       <module>Springboot-legou-config-server</module>
       <module>Springboot-legou-product-parent</module>
+      <module>Springboot-legou-common-parent</module>
   </modules>
 
   <name>Springboot-parent</name>

@@ -20,7 +20,12 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-
+        <!--公共层依赖-->
+        <dependency>
+            <groupId>Springboot-parent</groupId>
+            <artifactId>legou-common-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--spring-boot-web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -67,6 +72,14 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.6</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
     </dependencies>
 
 

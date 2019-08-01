@@ -16,3 +16,5 @@ zuul:
       path: /plat/** #平台服务的请求路径
       serviceId: plat-service
   prefix: /services #请求前缀
+
+

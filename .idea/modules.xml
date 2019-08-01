@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-basic-parent/Springboot-legou-basic-parent.iml" filepath="$PROJECT_DIR$/Springboot-legou-basic-parent/Springboot-legou-basic-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springboot-legou-common-parent/Springboot-legou-common-parent.iml" filepath="$PROJECT_DIR$/Springboot-legou-common-parent/Springboot-legou-common-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-config-server/Springboot-legou-config-server.iml" filepath="$PROJECT_DIR$/Springboot-legou-config-server/Springboot-legou-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-eurekaserver/Springboot-legou-eurekaserver.iml" filepath="$PROJECT_DIR$/Springboot-legou-eurekaserver/Springboot-legou-eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-plat-parent/Springboot-legou-plat-parent.iml" filepath="$PROJECT_DIR$/Springboot-legou-plat-parent/Springboot-legou-plat-parent.iml" />
@@ -11,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/Springboot-parent.iml" filepath="$PROJECT_DIR$/Springboot-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-generator/legou-basic-generator.iml" filepath="$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-generator/legou-basic-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-util/legou-basic-util.iml" filepath="$PROJECT_DIR$/Springboot-legou-basic-parent/legou-basic-util/legou-basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-interface/legou-common-interface.iml" filepath="$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-interface/legou-common-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-service/legou-common-service.iml" filepath="$PROJECT_DIR$/Springboot-legou-common-parent/legou-common-service/legou-common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-plat-parent/legou-plat-interface/legou-plat-interface.iml" filepath="$PROJECT_DIR$/Springboot-legou-plat-parent/legou-plat-interface/legou-plat-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-plat-parent/legou-plat-service/legou-plat-service.iml" filepath="$PROJECT_DIR$/Springboot-legou-plat-parent/legou-plat-service/legou-plat-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot-legou-product-parent/legou-product-interface/legou-product-interface.iml" filepath="$PROJECT_DIR$/Springboot-legou-product-parent/legou-product-interface/legou-product-interface.iml" />
